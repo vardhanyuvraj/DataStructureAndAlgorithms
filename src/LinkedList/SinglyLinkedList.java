@@ -2,27 +2,33 @@ package LinkedList;
 
 public class SinglyLinkedList {
 
-	private Node head;
+	private SinglyNode head;
 	private int length;
 
 	public SinglyLinkedList() {
-		length = 0;
 	}
 
-	public Node getHead() {
+	public SinglyNode getHead() {
 		return head;
 	}
 
 	public void insertAtBegin(int data) {
-		Node newNode = new Node(data);
-		if (length == 0) {
+		SinglyNode newNode = new SinglyNode();
+		if (length == 0 && getHead() == null) {
+			newNode.setData(data);
 			head = newNode;
+			;
 			length++;
 		} else {
+			newNode.setData(data);
 			newNode.setNext(head);
 			head = newNode;
 			length++;
 		}
+	}
+
+	public int getListLength() {
+		return length;
 	}
 
 	@Override
@@ -33,10 +39,10 @@ public class SinglyLinkedList {
 
 	public String displayList() {
 		String result = "[";
-		if (length == 0) {
+		if (length == 0 && getHead() == null) {
 			result = result + "]";
 		} else {
-			Node currentNode = head;
+			SinglyNode currentNode = head;
 			while (currentNode.getNext() != null) {
 				result = result + currentNode.getData() + ", ";
 				currentNode = currentNode.getNext();

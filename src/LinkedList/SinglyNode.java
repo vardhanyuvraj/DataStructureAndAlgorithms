@@ -1,11 +1,11 @@
 package LinkedList;
 
-public class Node {
-	private int data;
-	private Node next;
+public class SinglyNode {
 
-	public Node(int data) {
-		this.data = data;
+	private int data;
+	private SinglyNode next;
+
+	public SinglyNode() {
 	}
 
 	public int getData() {
@@ -16,12 +16,11 @@ public class Node {
 		this.data = data;
 	}
 
-	public Node getNext() {
+	public SinglyNode getNext() {
 		return next;
 	}
 
-	public void setNext(Node next) {
+	public void setNext(SinglyNode next) {
 		this.next = next;
 	}
-
 }
