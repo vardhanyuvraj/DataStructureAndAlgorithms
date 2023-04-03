@@ -78,4 +78,30 @@ public class SinglyLinkedList {
 			length++;
 		}
 	}
+
+	// This method deletes a node at a given position in the linked list
+	public void deleteANode(int position) {
+		if (position < 0 || position >= getListLength()) {
+			System.out.println("Invalid Position Entered");
+			return;
+		} else {
+			if (getListLength() == 0) {
+				return;
+			}
+			if (position == 0) {
+				SinglyNode currentNode = head;
+				head = currentNode.getNext();
+				currentNode.setNext(null);
+				length--;
+				return;
+			} else {
+				SinglyNode currentNode = head;
+				for (int i = 1; i < position; i++) {
+					currentNode = currentNode.getNext();
+				}
+				currentNode.setNext(currentNode.getNext().getNext());
+				length--;
+			}
+		}
+	}
 }
