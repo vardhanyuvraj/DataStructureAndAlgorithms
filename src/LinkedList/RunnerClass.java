@@ -22,6 +22,24 @@ public class RunnerClass {
 		singlyLinkedList.insertAtEnd(987);
 		System.out.println(singlyLinkedList);
 		System.out.println(singlyLinkedList.getListLength());
+		singlyLinkedList.deleteANode(1);
+		System.out.println(singlyLinkedList);
+		System.out.println(singlyLinkedList.getListLength());
+		singlyLinkedList.insertAtBegin(4566);
+		System.out.println(singlyLinkedList);
+		System.out.println(singlyLinkedList.getListLength());
+		singlyLinkedList.insertAtEnd(24);
+		System.out.println(singlyLinkedList);
+		System.out.println(singlyLinkedList.getListLength());
+		singlyLinkedList.deleteANode(4);
+		System.out.println(singlyLinkedList);
+		System.out.println(singlyLinkedList.getListLength());
+		singlyLinkedList.deleteANode(0);
+		System.out.println(singlyLinkedList);
+		System.out.println(singlyLinkedList.getListLength());
+		singlyLinkedList.deleteANode(3);
+		System.out.println(singlyLinkedList);
+		System.out.println(singlyLinkedList.getListLength());
 	}
 
 }
