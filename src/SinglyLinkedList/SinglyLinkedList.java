@@ -1,4 +1,4 @@
-package LinkedList;
+package SinglyLinkedList;
 
 //This class represents a singly linked list
 public class SinglyLinkedList {
@@ -19,7 +19,7 @@ public class SinglyLinkedList {
 	}
 
 	// This method checks if the linked list is empty
-	public boolean isEmpty() {
+	public boolean isListEmpty() {
 		if (getListLength() == 0 && head == null) {
 			return true;
 		}
@@ -29,7 +29,7 @@ public class SinglyLinkedList {
 	// This method inserts a new node at the beginning of the linked list
 	public void insertAtBegin(int data) {
 		SinglyNode newNode = new SinglyNode();
-		if (isEmpty()) {
+		if (isListEmpty()) {
 			newNode.setData(data);
 			head = newNode;
 			length++;
@@ -44,7 +44,7 @@ public class SinglyLinkedList {
 	// This method returns a string representation of the linked list
 	public String displayList() {
 		String result = "[";
-		if (isEmpty()) {
+		if (isListEmpty()) {
 			result = result + "]";
 		} else {
 			SinglyNode currentNode = head;
@@ -65,7 +65,7 @@ public class SinglyLinkedList {
 	// This method inserts a new node at the end of the linked list
 	public void insertAtEnd(int data) {
 		SinglyNode newNode = new SinglyNode();
-		if (isEmpty()) {
+		if (isListEmpty()) {
 			insertAtBegin(data);
 		} else {
 			SinglyNode currentNode = head;
