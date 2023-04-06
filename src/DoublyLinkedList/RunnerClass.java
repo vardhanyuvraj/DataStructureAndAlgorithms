@@ -13,5 +13,14 @@ public class RunnerClass {
 		doublyLinkedList.insertAtEnd(84);
 		System.out.println(doublyLinkedList.getListLength());
 		System.out.println(doublyLinkedList.displayList());
+		doublyLinkedList.insertAtStart(781);
+		System.out.println(doublyLinkedList.getListLength());
+		System.out.println(doublyLinkedList.displayList());
+		doublyLinkedList.insertAtEnd(1005);
+		System.out.println(doublyLinkedList.getListLength());
+		System.out.println(doublyLinkedList.displayList());
+		doublyLinkedList.insertAtStart(111);
+		System.out.println(doublyLinkedList.getListLength());
+		System.out.println(doublyLinkedList.displayList());
 	}
 }
