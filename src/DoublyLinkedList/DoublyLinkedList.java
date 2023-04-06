@@ -64,4 +64,13 @@ public class DoublyLinkedList {
 		}
 		length++;
 	}
+
+	public void insertAtStart(int data) {
+		DoublyNode newNode = new DoublyNode();
+		newNode.setData(data);
+		newNode.setNext(head);
+		head.setPrev(newNode);
+		head = newNode;
+		length++;
+	}
 }
