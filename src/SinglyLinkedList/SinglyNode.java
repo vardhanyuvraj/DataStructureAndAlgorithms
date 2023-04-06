@@ -1,4 +1,4 @@
-package LinkedList;
+package SinglyLinkedList;
 
 //This class represents a node in a singly linked list
 public class SinglyNode {
