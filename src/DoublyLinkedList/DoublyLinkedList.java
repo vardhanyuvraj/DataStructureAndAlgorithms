@@ -28,7 +28,7 @@ public class DoublyLinkedList {
 	}
 
 	// Displays the contents of the linked list as a string
-	public String displayList() {
+	private String displayList() {
 		String result = "[";
 		if (isListEmpty()) {
 			result = result + "]";
@@ -42,6 +42,12 @@ public class DoublyLinkedList {
 			result = result + currentNode.getData() + "]";
 		}
 		return result;
+	}
+
+	// Overrides the toString() method to display the linked list
+	@Override
+	public String toString() {
+		return displayList();
 	}
 
 	// Inserts a new node with the given data at the end of the linked list
@@ -65,6 +71,7 @@ public class DoublyLinkedList {
 		length++;
 	}
 
+	// Inserts a new node with the given data at the start of the linked list
 	public void insertAtStart(int data) {
 		DoublyNode newNode = new DoublyNode();
 		newNode.setData(data);
@@ -73,4 +80,5 @@ public class DoublyLinkedList {
 		head = newNode;
 		length++;
 	}
+
 }
