@@ -40,6 +40,15 @@ public class RunnerClass {
 		singlyLinkedList.deleteANode(3);
 		System.out.println(singlyLinkedList);
 		System.out.println(singlyLinkedList.getListLength());
+		singlyLinkedList.insertAtPosition(1, 54);
+		System.out.println(singlyLinkedList);
+		System.out.println(singlyLinkedList.getListLength());
+		singlyLinkedList.insertAtPosition(0, 354);
+		System.out.println(singlyLinkedList);
+		System.out.println(singlyLinkedList.getListLength());
+		singlyLinkedList.insertAtPosition(6, 1);
+		System.out.println(singlyLinkedList);
+		System.out.println(singlyLinkedList.getListLength());
 	}
 
 }
