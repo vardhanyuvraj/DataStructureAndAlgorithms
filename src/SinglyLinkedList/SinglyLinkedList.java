@@ -104,4 +104,27 @@ public class SinglyLinkedList {
 			}
 		}
 	}
+
+	// This method inserts a new node at the specified position in the linked list
+	public void insertAtPosition(int position, int data) {
+		if (position < 0 || position > getListLength()) {
+			System.out.println("Invalid Input");
+		} else {
+			if (position == 0) {
+				insertAtBegin(data);
+			} else if (position == getListLength() - 1) {
+				insertAtEnd(data);
+			} else {
+				SinglyNode newNode = new SinglyNode();
+				SinglyNode currentNode = head;
+				for (int i = 0; i < position - 1; i++) {
+					currentNode = currentNode.getNext();
+				}
+				newNode.setData(data);
+				newNode.setNext(currentNode.getNext());
+				currentNode.setNext(newNode);
+				length++;
+			}
+		}
+	}
 }
