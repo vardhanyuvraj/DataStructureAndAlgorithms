@@ -81,4 +81,27 @@ public class DoublyLinkedList {
 		length++;
 	}
 
+	// This method deletes a node at a given position in the linked list
+	public void deleteAtPosition(int position) {
+		if (position < 0 || position >= getListLength()) {
+			System.out.println("Invalid Input");
+			return;
+		}
+		if (position == 0 && getListLength() == 1) {
+			head = null;
+			length--;
+		} else if (position == 0 && isListEmpty() != true) {
+			head = head.getNext();
+			length--;
+		} else {
+			DoublyNode toDelete = head;
+			for (int i = 0; i < position; i++) {
+				toDelete = toDelete.getNext();
+			}
+			toDelete.getPrev().setNext(toDelete.getNext());
+			toDelete = null;
+			length--;
+		}
+	}
+
 }

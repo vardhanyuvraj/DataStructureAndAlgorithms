@@ -7,6 +7,9 @@ public class RunnerClass {
 		doublyLinkedList.insertAtEnd(9);
 		System.out.println(doublyLinkedList.getListLength());
 		System.out.println(doublyLinkedList);
+		doublyLinkedList.deleteAtPosition(0);
+		System.out.println(doublyLinkedList.getListLength());
+		System.out.println(doublyLinkedList);
 		doublyLinkedList.insertAtEnd(26);
 		System.out.println(doublyLinkedList.getListLength());
 		System.out.println(doublyLinkedList);
@@ -20,6 +23,15 @@ public class RunnerClass {
 		System.out.println(doublyLinkedList.getListLength());
 		System.out.println(doublyLinkedList);
 		doublyLinkedList.insertAtStart(111);
+		System.out.println(doublyLinkedList.getListLength());
+		System.out.println(doublyLinkedList);
+		doublyLinkedList.deleteAtPosition(2);
+		System.out.println(doublyLinkedList.getListLength());
+		System.out.println(doublyLinkedList);
+		doublyLinkedList.deleteAtPosition(0);
+		System.out.println(doublyLinkedList.getListLength());
+		System.out.println(doublyLinkedList);
+		doublyLinkedList.deleteAtPosition(doublyLinkedList.getListLength() - 1);
 		System.out.println(doublyLinkedList.getListLength());
 		System.out.println(doublyLinkedList);
 	}
