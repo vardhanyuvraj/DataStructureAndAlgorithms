@@ -1,4 +1,4 @@
-package SinglyLinkedList;
+package LinkedList.SinglyLinkedList;
 
 //This class represents a singly linked list
 public class SinglyLinkedList {
