@@ -1,14 +1,31 @@
+/**
+ * The SimpleArrayStack class represents a simple implementation of the Stack data structure
+ * using a simple array.
+ */
 package Stack.UsingSimpleArray;
 
 public class SimpleArrayStack {
 
+	// Represents the top index of the stack, initialized to -1
 	private int top = -1;
+
+	// Represents the stack array
 	private int stack[];
 
+	/**
+	 * Constructs a SimpleArrayStack object with the specified length.
+	 *
+	 * @param length the length of the stack array
+	 */
 	public SimpleArrayStack(int length) {
 		stack = new int[length];
 	}
 
+	/**
+	 * Checks if the stack is empty.
+	 *
+	 * @return true if the stack is empty, false otherwise
+	 */
 	public boolean isStackEmpty() {
 		if (top == -1) {
 			return true;
@@ -16,6 +33,11 @@ public class SimpleArrayStack {
 			return false;
 	}
 
+	/**
+	 * Checks if the stack is full.
+	 *
+	 * @return true if the stack is full, false otherwise
+	 */
 	public boolean isStackFull() {
 		if (top == stack.length - 1) {
 			return true;
@@ -23,14 +45,42 @@ public class SimpleArrayStack {
 			return false;
 	}
 
-	public void getTopElement() {
+	/**
+	 * Returns the top element of the stack without removing it. Prints "Stack
+	 * Underflow" if the stack is empty.
+	 */
+	public void peek() {
 		if (isStackEmpty()) {
 			System.out.println("Stack Underflow");
 			return;
 		}
-		System.out.println(stack[top]);
+		System.out.println("Top Element is " + stack[top]);
 	}
 
+	/**
+	 * Returns a string representation of the stack.
+	 *
+	 * @return a string representation of the stack
+	 */
+	public String printStack() {
+		String result = "[ ";
+		if (isStackEmpty()) {
+			result = result + "Stack Underflow ]";
+			return result;
+		} else {
+			for (int i = 0; i <= top; i++) {
+				result = result + stack[i] + " ";
+			}
+		}
+		return result + "]";
+	}
+
+	/**
+	 * Adds an element to the top of the stack. Prints "Stack Overflow" if the stack
+	 * is full.
+	 *
+	 * @param data the data to be pushed onto the stack
+	 */
 	public void push(int data) {
 		if (isStackFull()) {
 			System.out.println("Stack Overflow");
@@ -40,12 +90,16 @@ public class SimpleArrayStack {
 		}
 	}
 
+	/**
+	 * Removes the top element from the stack. Prints "Stack Underflow" if the stack
+	 * is empty.
+	 */
 	public void pop() {
 		if (isStackEmpty()) {
 			System.out.println("Stack Underflow");
 			return;
 		} else {
-			stack[top--] = -9999;
+			top--;
 		}
 	}
 
