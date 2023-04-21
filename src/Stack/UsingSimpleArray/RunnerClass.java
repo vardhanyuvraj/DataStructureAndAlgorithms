@@ -4,33 +4,50 @@ public class RunnerClass {
 
 	public static void main(String[] args) {
 		SimpleArrayStack stack = new SimpleArrayStack(10);
-		stack.getTopElement();
+		System.out.println(stack.printStack());
+		stack.peek();
 		stack.push(5);
-		stack.getTopElement();
+		System.out.println(stack.printStack());
+		stack.peek();
 		stack.push(4);
-		stack.getTopElement();
+		System.out.println(stack.printStack());
+		stack.peek();
 		stack.push(495);
-		stack.getTopElement();
+		System.out.println(stack.printStack());
+		stack.peek();
 		stack.push(5);
-		stack.getTopElement();
+		System.out.println(stack.printStack());
+		stack.peek();
 		stack.push(4);
-		stack.getTopElement();
+		System.out.println(stack.printStack());
+		stack.peek();
 		stack.push(495);
-		stack.getTopElement();
+		System.out.println(stack.printStack());
+		stack.peek();
 		stack.pop();
-		stack.getTopElement();
+		System.out.println(stack.printStack());
+		stack.peek();
 		stack.push(5);
-		stack.getTopElement();
+		System.out.println(stack.printStack());
+		stack.peek();
 		stack.push(4);
-		stack.getTopElement();
+		System.out.println(stack.printStack());
+		stack.peek();
 		stack.push(495);
-		stack.getTopElement();
+		System.out.println(stack.printStack());
+		stack.peek();
 		stack.push(5);
-		stack.getTopElement();
+		System.out.println(stack.printStack());
+		stack.peek();
 		stack.push(4);
-		stack.getTopElement();
+		System.out.println(stack.printStack());
+		stack.peek();
 		stack.push(495);
-		stack.getTopElement();
+		System.out.println(stack.printStack());
+		stack.peek();
+		stack.pop();
+		System.out.println(stack.printStack());
+		stack.peek();
 	}
 
 }
