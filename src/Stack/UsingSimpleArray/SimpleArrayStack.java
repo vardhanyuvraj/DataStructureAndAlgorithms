@@ -12,20 +12,12 @@ public class SimpleArrayStack {
 	// Represents the stack array
 	private int stack[];
 
-	/**
-	 * Constructs a SimpleArrayStack object with the specified length.
-	 *
-	 * @param length the length of the stack array
-	 */
+	// Constructs a SimpleArrayStack object with the specified length.
 	public SimpleArrayStack(int length) {
 		stack = new int[length];
 	}
 
-	/**
-	 * Checks if the stack is empty.
-	 *
-	 * @return true if the stack is empty, false otherwise
-	 */
+	// Checks if the stack is empty.
 	public boolean isStackEmpty() {
 		if (top == -1) {
 			return true;
@@ -33,11 +25,7 @@ public class SimpleArrayStack {
 			return false;
 	}
 
-	/**
-	 * Checks if the stack is full.
-	 *
-	 * @return true if the stack is full, false otherwise
-	 */
+	// Checks if the stack is full.
 	public boolean isStackFull() {
 		if (top == stack.length - 1) {
 			return true;
@@ -45,10 +33,7 @@ public class SimpleArrayStack {
 			return false;
 	}
 
-	/**
-	 * Returns the top element of the stack without removing it. Prints "Stack
-	 * Underflow" if the stack is empty.
-	 */
+	// Returns the top element of the stack without removing it.
 	public void peek() {
 		if (isStackEmpty()) {
 			System.out.println("Stack Underflow");
@@ -57,11 +42,7 @@ public class SimpleArrayStack {
 		System.out.println("Top Element is " + stack[top]);
 	}
 
-	/**
-	 * Returns a string representation of the stack.
-	 *
-	 * @return a string representation of the stack
-	 */
+	// Returns a string representation of the stack.
 	public String printStack() {
 		String result = "[ ";
 		if (isStackEmpty()) {
@@ -75,12 +56,7 @@ public class SimpleArrayStack {
 		return result + "]";
 	}
 
-	/**
-	 * Adds an element to the top of the stack. Prints "Stack Overflow" if the stack
-	 * is full.
-	 *
-	 * @param data the data to be pushed onto the stack
-	 */
+	// Adds an element to the top of the stack.
 	public void push(int data) {
 		if (isStackFull()) {
 			System.out.println("Stack Overflow");
@@ -90,10 +66,7 @@ public class SimpleArrayStack {
 		}
 	}
 
-	/**
-	 * Removes the top element from the stack. Prints "Stack Underflow" if the stack
-	 * is empty.
-	 */
+	// Removes the top element from the stack.
 	public void pop() {
 		if (isStackEmpty()) {
 			System.out.println("Stack Underflow");
