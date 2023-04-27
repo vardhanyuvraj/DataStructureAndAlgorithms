@@ -4,6 +4,8 @@
 This repository contains Java code related to various Data Structures and Algorithms.
 
 ## Data Structures
+
+## Linked List
 ### [Singly Linked List](https://github.com/vardhanyuvraj/DataStructureAndAlgorithms/tree/main/src/LinkedList/SinglyLinkedList)
 This SinglyLinkedList class is an implementation of a singly linked list data structure. The linked list consists of nodes that are linked together in a sequence. Each node in the list contains a reference to the next node in the sequence. The list maintains a reference to the head node of the sequence.
 
@@ -37,7 +39,23 @@ The following operations can be performed on a doubly linked list:
 The DoublyLinkedList class is implemented using the DoublyNode class, which represents a node in the linked list. Each node contains a data field and two pointers: prev and next. The prev pointer points to the previous node in the linked list, and the next pointer points to the next node in the linked list.
 
 
-## Feedback
+## Stack
+### [Stack Using Simple Array](https://github.com/vardhanyuvraj/DataStructureAndAlgorithms/tree/main/src/Stack/UsingSimpleArray)
+
+The SimpleArrayStack class represents a simple implementation of the Stack data structure using a simple array. A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle, where the last element inserted is the first one to be removed. The SimpleArrayStack implementation consists of an integer array called stack and a top variable to keep track of the top element in the stack.
+
+The following operations can be performed on the SimpleArrayStack:
+
+- push(int data) - adds an element to the top of the stack
+- pop() - removes the top element from the stack
+- peek() - returns the top element of the stack without removing it
+- printStack() - returns a string representation of the stack
+- isStackEmpty() - returns a boolean indicating whether the stack is empty
+- isStackFull() - Returns a boolean indicating whether the stack is full
+
+To use the SimpleArrayStack, create a new object of the SimpleArrayStack class with the desired size of the stack. Then, you can use the available methods to add, remove or view elements in the stack.
+
+
+# Feedback
 
 If you have any feedback, please reach out to me at vardhan.yuvraj.singh@gmail.com
-
