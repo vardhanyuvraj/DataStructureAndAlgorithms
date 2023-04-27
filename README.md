@@ -56,6 +56,22 @@ The following operations can be performed on the SimpleArrayStack:
 To use the SimpleArrayStack, create a new object of the SimpleArrayStack class with the desired size of the stack. Then, you can use the available methods to add, remove or view elements in the stack.
 
 
+### [Stack using Linked List](https://github.com/vardhanyuvraj/DataStructureAndAlgorithms/tree/main/src/Stack/UsingLinkedList)
+This code implements a Stack data structure using a linked list. A stack is a Last-In-First-Out (LIFO) data structure where elements can be added or removed only from the top of the stack.
+
+The StackUsingLinkedList class consists of:
+
+- head - a pointer to the first element of the linked list
+- top - a pointer to the top of the stack
+- push() - method to add an element to the top of the stack
+- pop() - method to remove the top element from the stack
+- peek() - method to return the value of the top element without removing it
+- isStackEmpty() - method to check whether the stack is empty or not
+- displayStack() - method to display the elements of the stack
+
+Create an instance of the StackUsingLinkedList class and use the push(), pop(), peek(), isStackEmpty(), and displayStack() methods to manipulate the stack.
+
+
 # Feedback
 
 If you have any feedback, please reach out to me at vardhan.yuvraj.singh@gmail.com
