@@ -72,6 +72,19 @@ The StackUsingLinkedList class consists of:
 Create an instance of the StackUsingLinkedList class and use the push(), pop(), peek(), isStackEmpty(), and displayStack() methods to manipulate the stack.
 
 
+### [Stack using Dynamic Array](https://github.com/vardhanyuvraj/DataStructureAndAlgorithms/tree/main/src/Stack/UsingDynamicArray)
+This code implements a Stack data structure using a dynamic array. A stack is a Last-In-First-Out (LIFO) data structure where elements can be added or removed only from the top of the stack.
+
+The DynamicArrayStack class consists of:
+
+- push(int data) - method to add an element to the top of the stack
+- pop() - method to remove the top element from the stack
+- peek() - method to return the value of the top element without removing it
+- isStackEmpty() - method to check whether the stack is empty or not
+- printStack() - method to return a string representation of the stack
+
+Create an instance of the DynamicArrayStack class and use the push(int data), pop(), peek(), isStackEmpty(), and printStack() methods to manipulate the stack.
 # Feedback
 
 If you have any feedback, please reach out to me at vardhan.yuvraj.singh@gmail.com
+
