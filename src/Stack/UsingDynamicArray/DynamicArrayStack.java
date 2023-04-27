@@ -10,7 +10,7 @@ public class DynamicArrayStack {
 	// Declares an ArrayList to store the stack
 	private ArrayList<Integer> stack;
 
-	// Constructor that initializes an empty ArrayList
+	// Constructor that initializes an empty DynamicArray
 	public DynamicArrayStack() {
 		stack = new ArrayList<>();
 	}
